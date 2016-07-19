@@ -1,6 +1,6 @@
 //
-//  MyWalletTests.m
-//  MyWalletTests
+//  EuroTests.m
+//  MyWallet
 //
 //  Created by Jacobo Enriquez Gabeiras on 18/7/16.
 //  Copyright © 2016 enanibus. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface MyWalletTests : XCTestCase
+@interface EuroTests : XCTestCase
 
 @end
 
-@implementation MyWalletTests
+@implementation EuroTests
 
 - (void)setUp {
     [super setUp];
