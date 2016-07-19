@@ -10,4 +10,17 @@
 
 @implementation Euro
 
+-(instancetype) initWithAmount:(NSInteger) amount{
+    
+    if (self = [super init]){
+        _amount = amount;
+    }
+    return self;
+}
+
+-(void)times: (NSInteger) multiplier{
+    
+    _amount = _amount * multiplier;
+}
+
 @end

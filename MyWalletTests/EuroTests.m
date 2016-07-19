@@ -6,7 +6,8 @@
 //  Copyright © 2016 enanibus. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+#import "Euro.h"
 
 @interface EuroTests : XCTestCase
 
@@ -24,16 +25,11 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void) testSimplelMultiplication{
+   
+    Euro *total = [[Euro alloc] initWithAmount:5];
+    [total times: 2];
+    XCTAssertEqual(total.amount, 10);
 }
 
 @end

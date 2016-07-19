@@ -10,4 +10,10 @@
 
 @interface Euro : NSObject
 
+@property(readonly) NSInteger amount;
+
+-(instancetype) initWithAmount:(NSInteger) amount;
+
+-(void)times: (NSInteger) multiplier;
+
 @end
