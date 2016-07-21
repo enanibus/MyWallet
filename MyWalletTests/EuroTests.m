@@ -25,11 +25,11 @@
     [super tearDown];
 }
 
--(void) testSimplelMultiplication{
+-(void) testMultiplication{
    
-    Euro *total = [[Euro alloc] initWithAmount:5];
-    [total times: 2];
-    XCTAssertEqual(total.amount, 10);
+    Euro *euro = [[Euro alloc] initWithAmount:5];
+    Euro *total = [euro times:2];
+    XCTAssertEqual(total.amount, 10, @"Both amounts should be equal!");
 }
 
 @end

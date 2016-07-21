@@ -18,9 +18,12 @@
     return self;
 }
 
--(void)times: (NSInteger) multiplier{
+-(Euro*)times: (NSInteger) multiplier{
+    git add .
     
-    _amount = _amount * multiplier;
+    Euro *newEuro = [[Euro alloc]
+                     initWithAmount:self.amount *multiplier];
+    return newEuro;
 }
 
 @end
