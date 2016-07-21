@@ -19,7 +19,6 @@
 }
 
 -(Euro*)times: (NSInteger) multiplier{
-    git add .
     
     Euro *newEuro = [[Euro alloc]
                      initWithAmount:self.amount *multiplier];
