@@ -8,6 +8,12 @@
 
 #import "Euro.h"
 
+@interface Euro()
+
+@property(readonly) NSInteger amount;
+
+@end
+
 @implementation Euro
 
 -(instancetype) initWithAmount:(NSInteger) amount{
