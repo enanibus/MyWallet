@@ -16,6 +16,8 @@
 		0A1AAB511D3D6BEB00400BC6 /* MyWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */; };
 		0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */; };
 		0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB611D3D6E1A00400BC6 /* Euro.m */; };
+		0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F31D43D742007A7A1D /* DollarTest.m */; };
+		0A8C11F71D461087007A7A1D /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F61D461087007A7A1D /* Dollar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
 		0A1AAB601D3D6E1A00400BC6 /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = MyWalletTests/Euro.h; sourceTree = SOURCE_ROOT; };
 		0A1AAB611D3D6E1A00400BC6 /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = MyWalletTests/Euro.m; sourceTree = SOURCE_ROOT; };
+		0A8C11F31D43D742007A7A1D /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
+		0A8C11F51D461087007A7A1D /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
+		0A8C11F61D461087007A7A1D /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 		0A1AAB1F1D3D6BEB00400BC6 = {
 			isa = PBXGroup;
 			children = (
+				0A8C11F21D43D6A3007A7A1D /* Models */,
 				0A1AAB2A1D3D6BEB00400BC6 /* MyWallet */,
 				0A1AAB441D3D6BEB00400BC6 /* MyWalletTests */,
 				0A1AAB4F1D3D6BEB00400BC6 /* MyWalletUITests */,
@@ -120,8 +126,6 @@
 		0A1AAB2B1D3D6BEB00400BC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A1AAB611D3D6E1A00400BC6 /* Euro.m */,
-				0A1AAB601D3D6E1A00400BC6 /* Euro.h */,
 				0A1AAB2C1D3D6BEB00400BC6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -132,6 +136,7 @@
 			children = (
 				0A1AAB471D3D6BEB00400BC6 /* Info.plist */,
 				0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */,
+				0A8C11F31D43D742007A7A1D /* DollarTest.m */,
 			);
 			path = MyWalletTests;
 			sourceTree = "<group>";
@@ -143,6 +148,17 @@
 				0A1AAB521D3D6BEB00400BC6 /* Info.plist */,
 			);
 			path = MyWalletUITests;
+			sourceTree = "<group>";
+		};
+		0A8C11F21D43D6A3007A7A1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A1AAB611D3D6E1A00400BC6 /* Euro.m */,
+				0A1AAB601D3D6E1A00400BC6 /* Euro.h */,
+				0A8C11F51D461087007A7A1D /* Dollar.h */,
+				0A8C11F61D461087007A7A1D /* Dollar.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */,
+				0A8C11F71D461087007A7A1D /* Dollar.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
 				0A1AAB2D1D3D6BEB00400BC6 /* main.m in Sources */,
 			);
@@ -285,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */,
 				0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */,
 				0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */,
 			);
@@ -504,6 +522,7 @@
 				0A1AAB571D3D6BEB00400BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1AAB581D3D6BEB00400BC6 /* Build configuration list for PBXNativeTarget "MyWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +531,7 @@
 				0A1AAB5A1D3D6BEB00400BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1AAB5B1D3D6BEB00400BC6 /* Build configuration list for PBXNativeTarget "MyWalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +540,7 @@
 				0A1AAB5D1D3D6BEB00400BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
