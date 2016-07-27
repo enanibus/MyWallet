@@ -34,4 +34,13 @@
     XCTAssertFalse([total isEqual:five], @"Non equivalent objects should not be equal!");
 }
 
+-(void) testHash{
+    
+    Dollar *a = [[Dollar alloc] initWithAmount:2];
+    Dollar *b = [[Dollar alloc] initWithAmount:2];
+    
+    XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
+    
+}
+
 @end
