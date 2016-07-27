@@ -43,4 +43,15 @@
     
 }
 
+-(void) testAmountStorage{
+    
+    Dollar *dolar = [[Dollar alloc] initWithAmount:2];
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    XCTAssertEqual(2, [[dolar performSelector:@selector(amount)]integerValue], @"The value retrieved should be the same as the stored");
+#pragma clang diagnostic pop
+    
+}
+
 @end

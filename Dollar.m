@@ -7,40 +7,19 @@
 //
 
 #import "Dollar.h"
-
-@interface Dollar()
-
-@property(readonly) NSInteger amount;
-
-@end
+#import "Money-Private.h"
 
 @implementation Dollar
-
--(instancetype) initWithAmount:(NSInteger) amount{
-    
-    if (self = [super init]){
-        _amount = amount;
-    }
-    return self;
-}
 
 -(Dollar*)times: (NSInteger) multiplier{
     
     Dollar *newDollar = [[Dollar alloc]
-                     initWithAmount:self.amount *multiplier];
+                     initWithAmount:[self.amount integerValue] * multiplier];
+
     return newDollar;
 }
 
 
 #pragma mark - Overwritten
--(BOOL)isEqual:(id)object{
-    
-    return [self amount] == [object amount];
-}
-
--(NSUInteger) hash{
-    
-    return (NSUInteger) self.amount;
-}
 
 @end

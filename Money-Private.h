@@ -1,16 +1,16 @@
 //
-//  Dollar.h
+//  Money-Private.h
 //  MyWallet
 //
-//  Created by Jacobo Enriquez Gabeiras on 25/7/16.
+//  Created by Jacobo Enriquez Gabeiras on 27/7/16.
 //  Copyright © 2016 enanibus. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Money.h"
 
-@interface Dollar : Money
+@interface Money()
 
--(Dollar*)times: (NSInteger) multiplier;
+@property (nonatomic) NSNumber *amount;
 
 @end
