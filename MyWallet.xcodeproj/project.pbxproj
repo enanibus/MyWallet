@@ -18,6 +18,7 @@
 		0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB611D3D6E1A00400BC6 /* Euro.m */; };
 		0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F31D43D742007A7A1D /* DollarTest.m */; };
 		0A8C11F71D461087007A7A1D /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F61D461087007A7A1D /* Dollar.m */; };
+		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		0A8C11F31D43D742007A7A1D /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
 		0A8C11F51D461087007A7A1D /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
 		0A8C11F61D461087007A7A1D /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
+		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
+		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				0A1AAB601D3D6E1A00400BC6 /* Euro.h */,
 				0A8C11F51D461087007A7A1D /* Dollar.h */,
 				0A8C11F61D461087007A7A1D /* Dollar.m */,
+				0AF585751D49008000986F29 /* Money.h */,
+				0AF585761D49008000986F29 /* Money.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			files = (
 				0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */,
 				0A8C11F71D461087007A7A1D /* Dollar.m in Sources */,
+				0AF585771D49008000986F29 /* Money.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
 				0A1AAB2D1D3D6BEB00400BC6 /* main.m in Sources */,
 			);
