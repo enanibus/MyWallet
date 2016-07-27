@@ -7,6 +7,7 @@
 //
 
 #import "Money.h"
+#import "NSObject+GNUStepAddons.h"
 
 
 @interface Money()
@@ -29,7 +30,7 @@
 
     // no se debería llamar, si no que debería
     // de usar el de la subclase
-    return self;
+    return [self subclassResponsibility:_cmd];
 }
 
 

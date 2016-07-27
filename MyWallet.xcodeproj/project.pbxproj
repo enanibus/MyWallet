@@ -19,6 +19,8 @@
 		0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F31D43D742007A7A1D /* DollarTest.m */; };
 		0A8C11F71D461087007A7A1D /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F61D461087007A7A1D /* Dollar.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
+		0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */; };
+		0AF5857F1D4908B200986F29 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857E1D4908B200986F29 /* MoneyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		0A8C11F61D461087007A7A1D /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
+		0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
+		0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
+		0AF5857E1D4908B200986F29 /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,8 @@
 		0A1AAB1F1D3D6BEB00400BC6 = {
 			isa = PBXGroup;
 			children = (
+				0AF5857A1D49057700986F29 /* Categories */,
+				0AF585791D49051200986F29 /* Frameworks */,
 				0A8C11F21D43D6A3007A7A1D /* Models */,
 				0A1AAB2A1D3D6BEB00400BC6 /* MyWallet */,
 				0A1AAB441D3D6BEB00400BC6 /* MyWalletTests */,
@@ -137,9 +144,8 @@
 		0A1AAB441D3D6BEB00400BC6 /* MyWalletTests */ = {
 			isa = PBXGroup;
 			children = (
+				0AF585781D4904F000986F29 /* Models */,
 				0A1AAB471D3D6BEB00400BC6 /* Info.plist */,
-				0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */,
-				0A8C11F31D43D742007A7A1D /* DollarTest.m */,
 			);
 			path = MyWalletTests;
 			sourceTree = "<group>";
@@ -164,6 +170,32 @@
 				0AF585761D49008000986F29 /* Money.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		0AF585781D4904F000986F29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */,
+				0A8C11F31D43D742007A7A1D /* DollarTest.m */,
+				0AF5857E1D4908B200986F29 /* MoneyTest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0AF585791D49051200986F29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AF5857A1D49057700986F29 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */,
+				0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +331,7 @@
 				0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */,
 				0A8C11F71D461087007A7A1D /* Dollar.m in Sources */,
 				0AF585771D49008000986F29 /* Money.m in Sources */,
+				0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
 				0A1AAB2D1D3D6BEB00400BC6 /* main.m in Sources */,
 			);
@@ -310,6 +343,7 @@
 			files = (
 				0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */,
 				0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */,
+				0AF5857F1D4908B200986F29 /* MoneyTest.m in Sources */,
 				0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
