@@ -11,13 +11,7 @@
 
 @implementation Dollar
 
--(Dollar*)times: (NSInteger) multiplier{
-    
-    Dollar *newDollar = [[Dollar alloc]
-                     initWithAmount:[self.amount integerValue] * multiplier];
 
-    return newDollar;
-}
 
 
 #pragma mark - Overwritten

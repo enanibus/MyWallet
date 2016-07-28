@@ -15,10 +15,6 @@
 
 @implementation MoneyTest
 
--(void) testThatTimesRaisesException{
-    
-    Money *money = [[Money alloc] initWithAmount:1];
-    XCTAssertThrows([money times:2], @"Should raise an exception");
-}
+
 
 @end

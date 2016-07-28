@@ -16,6 +16,7 @@
 		0A1AAB511D3D6BEB00400BC6 /* MyWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */; };
 		0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */; };
 		0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB611D3D6E1A00400BC6 /* Euro.m */; };
+		0A2BBB821D496AF7008E1914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BBB811D496AF7008E1914 /* Foundation.framework */; };
 		0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F31D43D742007A7A1D /* DollarTest.m */; };
 		0A8C11F71D461087007A7A1D /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F61D461087007A7A1D /* Dollar.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
@@ -59,6 +60,7 @@
 		0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
 		0A1AAB601D3D6E1A00400BC6 /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = MyWalletTests/Euro.h; sourceTree = SOURCE_ROOT; };
 		0A1AAB611D3D6E1A00400BC6 /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = MyWalletTests/Euro.m; sourceTree = SOURCE_ROOT; };
+		0A2BBB811D496AF7008E1914 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A8C11F31D43D742007A7A1D /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
 		0A8C11F51D461087007A7A1D /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
 		0A8C11F61D461087007A7A1D /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2BBB821D496AF7008E1914 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +190,7 @@
 		0AF585791D49051200986F29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A2BBB811D496AF7008E1914 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,6 +271,7 @@
 				TargetAttributes = {
 					0A1AAB271D3D6BEB00400BC6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 84PA5T3VGZ;
 					};
 					0A1AAB401D3D6BEB00400BC6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -481,10 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.KeepCoding.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -492,10 +500,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.KeepCoding.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -526,22 +537,37 @@
 		0A1AAB5C1D3D6BEB00400BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyWalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.KeepCoding.MyWalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TEST_TARGET_NAME = MyWallet;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				"VALID_ARCHS[sdk=*]" = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		0A1AAB5D1D3D6BEB00400BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyWalletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.KeepCoding.MyWalletUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TEST_TARGET_NAME = MyWallet;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				"VALID_ARCHS[sdk=*]" = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

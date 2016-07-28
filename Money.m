@@ -9,9 +9,23 @@
 #import "Money.h"
 #import "NSObject+GNUStepAddons.h"
 #import "Money-Private.h"
-
+#import "Euro.h"
+#import "Dollar.h"
 
 @implementation Money
+
++(id) euroWithAmount:(NSInteger) amount{
+    
+    return [[Money alloc] initWithAmount:amount];
+    
+}
+
+
++(id) dollarWithAmount:(NSInteger) amount{
+    
+    return [[Money alloc] initWithAmount:amount];
+}
+
 
 -(id) initWithAmount:(NSInteger) amount{
     
@@ -21,11 +35,12 @@
     return self;
 }
 
--(Money*)times: (NSInteger) multiplier{
-
-    // no se debería llamar, si no que debería
-    // de usar el de la subclase
-    return [self subclassResponsibility:_cmd];
+-(id)times: (NSInteger) multiplier{
+        
+    Money *newMoney = [[Money alloc]
+                         initWithAmount:[self.amount integerValue] * multiplier];
+    return newMoney;
+    
 }
 
 

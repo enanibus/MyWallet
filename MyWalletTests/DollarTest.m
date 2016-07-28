@@ -17,18 +17,18 @@
 
 -(void) testMultiplication{
     
-    Dollar *five = [[Dollar alloc] initWithAmount: 5];
+    Dollar *five = [Money dollarWithAmount: 5];
     Dollar *total = [five times:2];
-    Dollar *ten = [[Dollar alloc] initWithAmount: 10];
+    Dollar *ten = [Money dollarWithAmount: 10];
 
     XCTAssertEqualObjects(ten, total, @"$5 *2 = $10");
 }
 
 -(void) testEquality{
     
-    Dollar *five = [[Dollar alloc] initWithAmount: 5];
+    Dollar *five = [Money dollarWithAmount: 5];
     Dollar *total = [five times:2];
-    Dollar *ten = [[Dollar alloc] initWithAmount: 10];
+    Dollar *ten = [Money dollarWithAmount: 10];
     
     XCTAssertEqualObjects(ten, total, @"Equivalent objects should be equal!");
     XCTAssertFalse([total isEqual:five], @"Non equivalent objects should not be equal!");
@@ -36,8 +36,8 @@
 
 -(void) testHash{
     
-    Dollar *a = [[Dollar alloc] initWithAmount:2];
-    Dollar *b = [[Dollar alloc] initWithAmount:2];
+    Dollar *a = [Money dollarWithAmount:2];
+    Dollar *b = [Money dollarWithAmount:2];
     
     XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
     
@@ -45,7 +45,7 @@
 
 -(void) testAmountStorage{
     
-    Dollar *dolar = [[Dollar alloc] initWithAmount:2];
+    Dollar *dolar = [Money dollarWithAmount:2];
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
