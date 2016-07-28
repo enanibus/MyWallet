@@ -97,7 +97,7 @@
 -(void) testDescription{
     
     Money *one = [Money dollarWithAmount:1];
-    NSString *desc = @"<Money: $1>";
+    NSString *desc = @"<Money: USD 1>";
     
     XCTAssertEqualObjects(desc, [one description], @"Description must match template");
 }

@@ -62,8 +62,8 @@
 
 -(NSString *) description{
     
-    return [NSString stringWithFormat:@"<%@ %ld>",
-            [self class], (long)[self amount]];
+    return [NSString stringWithFormat:@"<%@: %@ %@>",
+            [self class], self.currency, self.amount];
     
 }
  
@@ -79,7 +79,7 @@
 
 -(NSUInteger) hash{
     
-    return (NSUInteger) self.amount;
+    return [self.amount integerValue];
 }
 
 
