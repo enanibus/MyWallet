@@ -9,8 +9,4 @@
 #import <Foundation/Foundation.h>
 #import "Money.h"
 
-@interface Money()
 
-@property (nonatomic) NSNumber *amount;
-
-@end

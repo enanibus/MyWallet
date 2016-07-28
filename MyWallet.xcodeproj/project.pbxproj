@@ -14,14 +14,9 @@
 		0A1AAB381D3D6BEB00400BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1AAB371D3D6BEB00400BC6 /* Assets.xcassets */; };
 		0A1AAB3B1D3D6BEB00400BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1AAB391D3D6BEB00400BC6 /* LaunchScreen.storyboard */; };
 		0A1AAB511D3D6BEB00400BC6 /* MyWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */; };
-		0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */; };
-		0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB611D3D6E1A00400BC6 /* Euro.m */; };
-		0A2BBB821D496AF7008E1914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BBB811D496AF7008E1914 /* Foundation.framework */; };
-		0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F31D43D742007A7A1D /* DollarTest.m */; };
-		0A8C11F71D461087007A7A1D /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C11F61D461087007A7A1D /* Dollar.m */; };
+		0A2BBB841D4A6C40008E1914 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB831D4A6C40008E1914 /* MoneyTest.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
 		0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */; };
-		0AF5857F1D4908B200986F29 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857E1D4908B200986F29 /* MoneyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +52,11 @@
 		0A1AAB4C1D3D6BEB00400BC6 /* MyWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWalletUITests.m; sourceTree = "<group>"; };
 		0A1AAB521D3D6BEB00400BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
-		0A1AAB601D3D6E1A00400BC6 /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = MyWalletTests/Euro.h; sourceTree = SOURCE_ROOT; };
-		0A1AAB611D3D6E1A00400BC6 /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = MyWalletTests/Euro.m; sourceTree = SOURCE_ROOT; };
-		0A2BBB811D496AF7008E1914 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0A8C11F31D43D742007A7A1D /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
-		0A8C11F51D461087007A7A1D /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
-		0A8C11F61D461087007A7A1D /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
+		0A2BBB831D4A6C40008E1914 /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
 		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
-		0AF5857E1D4908B200986F29 /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
 		0AF585801D491BB400986F29 /* Money-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2BBB821D496AF7008E1914 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,10 +153,6 @@
 		0A8C11F21D43D6A3007A7A1D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A1AAB611D3D6E1A00400BC6 /* Euro.m */,
-				0A1AAB601D3D6E1A00400BC6 /* Euro.h */,
-				0A8C11F51D461087007A7A1D /* Dollar.h */,
-				0A8C11F61D461087007A7A1D /* Dollar.m */,
 				0AF585751D49008000986F29 /* Money.h */,
 				0AF585761D49008000986F29 /* Money.m */,
 				0AF585801D491BB400986F29 /* Money-Private.h */,
@@ -180,9 +163,7 @@
 		0AF585781D4904F000986F29 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A1AAB5E1D3D6D1500400BC6 /* EuroTests.m */,
-				0A8C11F31D43D742007A7A1D /* DollarTest.m */,
-				0AF5857E1D4908B200986F29 /* MoneyTest.m */,
+				0A2BBB831D4A6C40008E1914 /* MoneyTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -190,7 +171,6 @@
 		0AF585791D49051200986F29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A2BBB811D496AF7008E1914 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,7 +316,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */,
-				0A8C11F71D461087007A7A1D /* Dollar.m in Sources */,
 				0AF585771D49008000986F29 /* Money.m in Sources */,
 				0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
@@ -348,10 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8C11F41D43D742007A7A1D /* DollarTest.m in Sources */,
-				0A1AAB621D3D6E1A00400BC6 /* Euro.m in Sources */,
-				0AF5857F1D4908B200986F29 /* MoneyTest.m in Sources */,
-				0A1AAB5F1D3D6D1500400BC6 /* EuroTests.m in Sources */,
+				0A2BBB841D4A6C40008E1914 /* MoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

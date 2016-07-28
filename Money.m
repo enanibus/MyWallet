@@ -8,9 +8,12 @@
 
 #import "Money.h"
 #import "NSObject+GNUStepAddons.h"
-#import "Money-Private.h"
-#import "Euro.h"
-#import "Dollar.h"
+
+@interface Money()
+
+@property (nonatomic) NSNumber *amount;
+
+@end
 
 @implementation Money
 
