@@ -12,9 +12,11 @@
 		0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB321D3D6BEB00400BC6 /* ViewController.m */; };
 		0A1AAB361D3D6BEB00400BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1AAB341D3D6BEB00400BC6 /* Main.storyboard */; };
 		0A1AAB381D3D6BEB00400BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1AAB371D3D6BEB00400BC6 /* Assets.xcassets */; };
-		0A1AAB3B1D3D6BEB00400BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1AAB391D3D6BEB00400BC6 /* LaunchScreen.storyboard */; };
 		0A1AAB511D3D6BEB00400BC6 /* MyWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */; };
 		0A2BBB841D4A6C40008E1914 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB831D4A6C40008E1914 /* MoneyTest.m */; };
+		0A2BBB861D4A837D008E1914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BBB851D4A837D008E1914 /* LaunchScreen.storyboard */; };
+		0A2BBB881D4A8465008E1914 /* BrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB871D4A8465008E1914 /* BrokerTests.m */; };
+		0A2BBB8B1D4A85A4008E1914 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB8A1D4A85A4008E1914 /* Broker.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
 		0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */; };
 /* End PBXBuildFile section */
@@ -45,7 +47,6 @@
 		0A1AAB321D3D6BEB00400BC6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A1AAB351D3D6BEB00400BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A1AAB371D3D6BEB00400BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A1AAB3A1D3D6BEB00400BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1AAB3C1D3D6BEB00400BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A1AAB411D3D6BEB00400BC6 /* MyWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1AAB471D3D6BEB00400BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,11 +54,14 @@
 		0A1AAB501D3D6BEB00400BC6 /* MyWalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWalletUITests.m; sourceTree = "<group>"; };
 		0A1AAB521D3D6BEB00400BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2BBB831D4A6C40008E1914 /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
+		0A2BBB851D4A837D008E1914 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A2BBB871D4A8465008E1914 /* BrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerTests.m; sourceTree = "<group>"; };
+		0A2BBB891D4A85A4008E1914 /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
+		0A2BBB8A1D4A85A4008E1914 /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
 		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
-		0AF585801D491BB400986F29 /* Money-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				0AF5857A1D49057700986F29 /* Categories */,
-				0AF585791D49051200986F29 /* Frameworks */,
 				0A8C11F21D43D6A3007A7A1D /* Models */,
 				0A1AAB2A1D3D6BEB00400BC6 /* MyWallet */,
 				0A1AAB441D3D6BEB00400BC6 /* MyWalletTests */,
 				0A1AAB4F1D3D6BEB00400BC6 /* MyWalletUITests */,
+				0AF585791D49051200986F29 /* Frameworks */,
 				0A1AAB291D3D6BEB00400BC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +121,7 @@
 				0A1AAB321D3D6BEB00400BC6 /* ViewController.m */,
 				0A1AAB341D3D6BEB00400BC6 /* Main.storyboard */,
 				0A1AAB371D3D6BEB00400BC6 /* Assets.xcassets */,
-				0A1AAB391D3D6BEB00400BC6 /* LaunchScreen.storyboard */,
+				0A2BBB851D4A837D008E1914 /* LaunchScreen.storyboard */,
 				0A1AAB3C1D3D6BEB00400BC6 /* Info.plist */,
 				0A1AAB2B1D3D6BEB00400BC6 /* Supporting Files */,
 			);
@@ -155,7 +159,8 @@
 			children = (
 				0AF585751D49008000986F29 /* Money.h */,
 				0AF585761D49008000986F29 /* Money.m */,
-				0AF585801D491BB400986F29 /* Money-Private.h */,
+				0A2BBB891D4A85A4008E1914 /* Broker.h */,
+				0A2BBB8A1D4A85A4008E1914 /* Broker.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2BBB831D4A6C40008E1914 /* MoneyTest.m */,
+				0A2BBB871D4A8465008E1914 /* BrokerTests.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -288,7 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1AAB3B1D3D6BEB00400BC6 /* LaunchScreen.storyboard in Resources */,
+				0A2BBB861D4A837D008E1914 /* LaunchScreen.storyboard in Resources */,
 				0A1AAB381D3D6BEB00400BC6 /* Assets.xcassets in Resources */,
 				0A1AAB361D3D6BEB00400BC6 /* Main.storyboard in Resources */,
 			);
@@ -319,6 +325,7 @@
 				0AF585771D49008000986F29 /* Money.m in Sources */,
 				0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
+				0A2BBB8B1D4A85A4008E1914 /* Broker.m in Sources */,
 				0A1AAB2D1D3D6BEB00400BC6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2BBB881D4A8465008E1914 /* BrokerTests.m in Sources */,
 				0A2BBB841D4A6C40008E1914 /* MoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,14 +369,6 @@
 				0A1AAB351D3D6BEB00400BC6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A1AAB391D3D6BEB00400BC6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A1AAB3A1D3D6BEB00400BC6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
