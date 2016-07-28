@@ -16,21 +16,22 @@
 
 +(id) euroWithAmount:(NSInteger) amount{
     
-    return [[Money alloc] initWithAmount:amount];
+    return [[Money alloc] initWithAmount:amount currency: @"EUR"];
     
 }
 
 
 +(id) dollarWithAmount:(NSInteger) amount{
     
-    return [[Money alloc] initWithAmount:amount];
+    return [[Money alloc] initWithAmount:amount currency: @"USD"];
 }
 
 
--(id) initWithAmount:(NSInteger) amount{
+-(id) initWithAmount:(NSInteger) amount currency:(NSString *) currency{
     
     if (self = [super init]){
         _amount = @(amount);
+        _currency = currency;
     }
     return self;
 }
@@ -38,7 +39,8 @@
 -(id)times: (NSInteger) multiplier{
         
     Money *newMoney = [[Money alloc]
-                         initWithAmount:[self.amount integerValue] * multiplier];
+                         initWithAmount:[self.amount integerValue] * multiplier
+                       currency: self.currency];
     return newMoney;
     
 }
