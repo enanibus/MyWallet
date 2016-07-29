@@ -22,7 +22,7 @@
     return self;
 }
 
--(Money *)reduce:(Money *) money
+-(id<Money>)reduce:(Money *) money
       toCurrency:(NSString *) currency{
     
     Money *result;

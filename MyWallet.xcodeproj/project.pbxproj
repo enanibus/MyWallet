@@ -18,6 +18,7 @@
 		0A2BBB881D4A8465008E1914 /* BrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB871D4A8465008E1914 /* BrokerTests.m */; };
 		0A2BBB8B1D4A85A4008E1914 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB8A1D4A85A4008E1914 /* Broker.m */; };
 		0A2BBB8D1D4BADA9008E1914 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB8C1D4BADA9008E1914 /* WalletTests.m */; };
+		0A2BBB901D4BB099008E1914 /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB8F1D4BB099008E1914 /* Wallet.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
 		0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		0A2BBB891D4A85A4008E1914 /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
 		0A2BBB8A1D4A85A4008E1914 /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
 		0A2BBB8C1D4BADA9008E1914 /* WalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
+		0A2BBB8E1D4BB099008E1914 /* Wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallet.h; sourceTree = "<group>"; };
+		0A2BBB8F1D4BB099008E1914 /* Wallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallet.m; sourceTree = "<group>"; };
 		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				0AF585761D49008000986F29 /* Money.m */,
 				0A2BBB891D4A85A4008E1914 /* Broker.h */,
 				0A2BBB8A1D4A85A4008E1914 /* Broker.m */,
+				0A2BBB8E1D4BB099008E1914 /* Wallet.h */,
+				0A2BBB8F1D4BB099008E1914 /* Wallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			files = (
 				0A1AAB331D3D6BEB00400BC6 /* ViewController.m in Sources */,
 				0AF585771D49008000986F29 /* Money.m in Sources */,
+				0A2BBB901D4BB099008E1914 /* Wallet.m in Sources */,
 				0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */,
 				0A1AAB301D3D6BEB00400BC6 /* AppDelegate.m in Sources */,
 				0A2BBB8B1D4A85A4008E1914 /* Broker.m in Sources */,
