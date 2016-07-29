@@ -25,17 +25,32 @@
 -(Money *)reduce:(Money *) money
       toCurrency:(NSString *) currency{
     
-    NSInteger rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency
-                                                          toCurrency:currency]] integerValue];
+    Money *result;
+    double rate = [[self.rates objectForKey:[self
+                                                keyFromCurrency:money.currency
+                                                toCurrency:currency]] doubleValue];
     
-    NSInteger newAmount = [money.amount integerValue] * rate;
+    // Comprobamos que divisa de origen y de destino son las mismas
+    if ([money.currency isEqual:currency]) {
+        result = money;
+    }else if (rate == 0){
+        // No hay tasa de conversión, excepción que te crió
+        [NSException raise:@"NoConversionException"
+                    format:@"Must have a conversion from %@ to %@", money.currency, currency];
+    }else{
+        // Tenemos conversión
     
-    Money *newMoney = [[Money alloc]
-                      initWithAmount:newAmount
-                      currency:currency];
+        double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency
+                                                          toCurrency:currency]] doubleValue];
     
+        NSInteger newAmount = [money.amount integerValue] * rate;
     
-    return newMoney;
+        result = [[Money alloc]
+                                initWithAmount:newAmount
+                                currency:currency];
+    }
+    
+    return result;
 }
 
 
@@ -44,7 +59,15 @@
      toCurrency:(NSString *) toCurrency{
     
     [self.rates setObject:@(rate)
-                   forKey:[self keyFromCurrency:fromCurrency toCurrency:toCurrency]];
+                   forKey:[self
+                           keyFromCurrency:fromCurrency
+                                     toCurrency:toCurrency]];
+    
+    NSNumber *invRate = @(1.0/rate);
+    [self.rates setObject:invRate
+                   forKey:[self
+                           keyFromCurrency:toCurrency
+                           toCurrency:fromCurrency]];
     
 }
 

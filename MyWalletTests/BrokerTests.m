@@ -47,12 +47,12 @@
 // $10 == €5 2:1 (tasa de 2 a 1)
 -(void) testReduction{
     
-    [self.emptyBroker addRate: 2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    [self.emptyBroker addRate: 2 fromCurrency:@"EUR" toCurrency:@"USD"];
     
     Money *dollars = [Money dollarWithAmount:10];
     Money *euros = [Money euroWithAmount:5];
     
-    Money *converted = [self.emptyBroker reduce: dollars
+    Money *converted = [self.emptyBroker reduce:dollars
                            toCurrency: @"EUR"];
     
     XCTAssertEqualObjects(converted, euros, @"$10 == €5 2:1");
