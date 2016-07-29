@@ -46,5 +46,18 @@
     return self;
 }
 
+-(id<Money>) reduceToCurrency:(NSString*)currency
+                   withBroker:(Broker*) broker{
+    
+    Money *result = [[Money alloc] initWithAmount:0 currency:currency];
+    
+    for (Money *each in self.moneys){
+        result = [result plus:[each reduceToCurrency:currency withBroker:broker]];
+        
+    }
+    return result;
+    
+}
+
 
 @end

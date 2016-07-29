@@ -28,18 +28,20 @@
 }
 
 // €40 + €20 = $100 2:1
-//-(void) testAdditionWithReduction{
-//    
-//    Broker *broker = [Broker new];
-//    [broker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
-//    
-//    Wallet *wallet = [[Wallet alloc] initWithAmount:40 currency:@"EUR"];
-//    [wallet plus: [Money dollarWithAmount:20]];
-//    
-//    Money *reduced = [broker reduce:wallet toCurrency:@"USD"];
-//    
-//    XCTAssertEqualObjects(reduced, [Money dollarWithAmount:100], "€40 + €20 = $100 2:1");
-//    
-//}
+-(void) testAdditionWithReduction{
+    
+    Broker *broker = [Broker new];
+    [broker addRate:2 fromCurrency:@"EUR" toCurrency:@"USD"];
+    
+    Wallet *wallet = [[Wallet alloc] initWithAmount:40 currency:@"EUR"];
+    [wallet plus: [Money dollarWithAmount:20]];
+    
+    Money *reduced = [broker reduce:wallet toCurrency:@"USD"];
+    
+    XCTAssertEqualObjects(reduced, [Money dollarWithAmount:100], "€40 + €20 = $100 2:1");
+    
+
+    
+}
 
 @end
