@@ -10,7 +10,7 @@
 #import "Money.h"
 
 @interface Broker()
-@property (nonatomic, strong) NSMutableDictionary *rates;
+
 @end
 
 @implementation Broker
@@ -22,35 +22,13 @@
     return self;
 }
 
--(id<Money>)reduce:(Money *) money
+-(Money *)reduce:(id<Money>) money
       toCurrency:(NSString *) currency{
     
-    Money *result;
-    double rate = [[self.rates objectForKey:[self
-                                                keyFromCurrency:money.currency
-                                                toCurrency:currency]] doubleValue];
+    // double dispatch
+    return [money reduceToCurrency:currency
+                        withBroker:self];
     
-    // Comprobamos que divisa de origen y de destino son las mismas
-    if ([money.currency isEqual:currency]) {
-        result = money;
-    }else if (rate == 0){
-        // No hay tasa de conversión, excepción que te crió
-        [NSException raise:@"NoConversionException"
-                    format:@"Must have a conversion from %@ to %@", money.currency, currency];
-    }else{
-        // Tenemos conversión
-    
-        double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency
-                                                          toCurrency:currency]] doubleValue];
-    
-        NSInteger newAmount = [money.amount integerValue] * rate;
-    
-        result = [[Money alloc]
-                                initWithAmount:newAmount
-                                currency:currency];
-    }
-    
-    return result;
 }
 
 
