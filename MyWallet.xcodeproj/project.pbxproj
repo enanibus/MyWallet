@@ -23,6 +23,8 @@
 		0A2BBB991D4C1304008E1914 /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BBB971D4C1304008E1914 /* SimpleViewController.xib */; };
 		0A2BBB9C1D4C134D008E1914 /* ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB9B1D4C134C008E1914 /* ControllerTests.m */; };
 		0A2BBB9F1D4C1DE6008E1914 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBB9E1D4C1DE6008E1914 /* WalletTableViewController.m */; };
+		0A2BBBA21D4CC141008E1914 /* NSNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBBA11D4CC141008E1914 /* NSNotificationCenterTests.m */; };
+		0A2BBBA51D4CC473008E1914 /* FakeNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BBBA41D4CC473008E1914 /* FakeNotificationCenter.m */; };
 		0AF585771D49008000986F29 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF585761D49008000986F29 /* Money.m */; };
 		0AF5857D1D4905F800986F29 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5857C1D4905F800986F29 /* NSObject+GNUStepAddons.m */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,9 @@
 		0A2BBB9B1D4C134C008E1914 /* ControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTests.m; sourceTree = "<group>"; };
 		0A2BBB9D1D4C1DE6008E1914 /* WalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewController.h; sourceTree = "<group>"; };
 		0A2BBB9E1D4C1DE6008E1914 /* WalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewController.m; sourceTree = "<group>"; };
+		0A2BBBA11D4CC141008E1914 /* NSNotificationCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationCenterTests.m; sourceTree = "<group>"; };
+		0A2BBBA31D4CC473008E1914 /* FakeNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationCenter.h; sourceTree = "<group>"; };
+		0A2BBBA41D4CC473008E1914 /* FakeNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationCenter.m; sourceTree = "<group>"; };
 		0AF585751D49008000986F29 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		0AF585761D49008000986F29 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		0AF5857B1D4905F800986F29 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		0A1AAB441D3D6BEB00400BC6 /* MyWalletTests */ = {
 			isa = PBXGroup;
 			children = (
+				0A2BBBA01D4CC117008E1914 /* SIngletons */,
 				0A2BBB9A1D4C1321008E1914 /* Controllers */,
 				0AF585781D4904F000986F29 /* Models */,
 				0A1AAB471D3D6BEB00400BC6 /* Info.plist */,
@@ -189,6 +195,16 @@
 				0A2BBB9B1D4C134C008E1914 /* ControllerTests.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0A2BBBA01D4CC117008E1914 /* SIngletons */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BBBA11D4CC141008E1914 /* NSNotificationCenterTests.m */,
+				0A2BBBA31D4CC473008E1914 /* FakeNotificationCenter.h */,
+				0A2BBBA41D4CC473008E1914 /* FakeNotificationCenter.m */,
+			);
+			name = SIngletons;
 			sourceTree = "<group>";
 		};
 		0A8C11F21D43D6A3007A7A1D /* Models */ = {
@@ -378,9 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2BBBA21D4CC141008E1914 /* NSNotificationCenterTests.m in Sources */,
 				0A2BBB881D4A8465008E1914 /* BrokerTests.m in Sources */,
 				0A2BBB841D4A6C40008E1914 /* MoneyTest.m in Sources */,
 				0A2BBB8D1D4BADA9008E1914 /* WalletTests.m in Sources */,
+				0A2BBBA51D4CC473008E1914 /* FakeNotificationCenter.m in Sources */,
 				0A2BBB9C1D4C134D008E1914 /* ControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FakeNotificationCenter.h"
+#import "Wallet.h"
 
 @interface NSNotificationCenterTests : XCTestCase
 
@@ -24,16 +26,21 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+// Comprobar que objeto gordo se ha dado de alta en una notificación
+-(void) testThatSubscribesToMemoryWarning{
+    
+    FakeNotificationCenter *fake = [FakeNotificationCenter new];
+    
+    Wallet *w = [Wallet new];
+    
+    [w subscribeToMemoryWarning: (NSNotificationCenter*)fake];
+    
+    NSDictionary *obs = [fake observers];
+    id observer = [obs objectForKey:UIApplicationDidReceiveMemoryWarningNotification];
+    
+    XCTAssertEqualObjects(observer, w, @"Fat object must subscribe to UIApplicationDidReceiveMemoryWarningNotification");
+    
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

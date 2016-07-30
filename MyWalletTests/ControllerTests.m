@@ -34,7 +34,7 @@
     
 //    self.wallet = [[Wallet alloc] initWithAmount:1 currency:@"USD"];
 //    [self.wallet plus: [Money euroWithAmount:1]];
-//    
+    
     self.walletVC = [[WalletTableViewController alloc]
                      initWithModel:self.wallet];
 
@@ -52,7 +52,7 @@
     // Mandamos el mensaje
     [self.simpleVC displayText:self.button];
     // Comprobamos que etiqueta y boton tienen el mismo texto
-    XCTAssertEqualObjects(self.button.titleLabel.text, self.label.text,@"Button and label should have the same text");
+    XCTAssertEqualObjects(self.button.titleLabel.text, self.label.text, @"Button and label should have the same text");
     
 }
 
