@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Wallet()
-@property(nonatomic, strong) NSMutableArray *moneys;
+
 @end
 
 
@@ -76,5 +76,82 @@
     
 }
 
+#pragma mark - Table methods
+
+-(NSUInteger) moneyCountForCurrency:(NSString *) currency{
+    
+    if (currency == nil){
+        return 0;
+    }
+    
+    NSMutableArray *moneysForCurrency = [NSMutableArray array];
+    for (Money *eachMoney in self.moneys){
+        if ([eachMoney.currency isEqualToString:currency]){
+            [moneysForCurrency addObject:eachMoney];;
+        }
+    }
+        
+    if (moneysForCurrency.count <= 0){
+            return 0;
+    }
+    
+    return [moneysForCurrency count];
+}
+
+-(Money *) moneyAtIndex:(NSInteger)index forCurrency:(NSString *)currency {
+    
+    if (index < 0) {
+        return nil;
+    }
+    
+    if (index > [self moneyCountForCurrency:currency]-1){
+        return nil;
+    }
+    
+    if ([self moneyCountForCurrency:currency] <= 0){
+        return nil;
+    }
+    else{
+        NSMutableArray *moneysForCurrency = [NSMutableArray array];
+        for (Money *eachMoney in self.moneys){
+            if ([eachMoney.currency isEqualToString:currency]){
+                [moneysForCurrency addObject:eachMoney];
+            }
+        }
+    
+        return moneysForCurrency[index];
+    }
+}
+
+
+-(Money *)subTotalForCurrency:(NSString *)currency {
+    
+    Money *subTotal = [Money new];
+    
+    NSMutableArray *moneysForCurrency = [NSMutableArray array];
+    for (Money *eachMoney in self.moneys){
+        if ([eachMoney.currency isEqualToString:currency]){
+            [moneysForCurrency addObject:eachMoney];;
+        }
+    }
+    
+    for (Money *eachMoney in moneysForCurrency) {
+        subTotal = [subTotal plus:eachMoney];
+    }
+    
+    return subTotal;
+}
+
+
+-(Money *)totalForCurrencyEuro:(Broker*)broker{
+    
+    Money *total = [Money euroWithAmount:0];
+    
+    for (Money *money in self.moneys) {
+        total = [total plus:[money reduceToCurrency:@"EUR"
+                                         withBroker:broker]];
+    }
+    return total;
+}
 
 @end

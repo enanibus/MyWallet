@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @class Wallet;
+@class Broker;
 
 @interface WalletTableViewController : UITableViewController
 
--(id) initWithModel:(Wallet *) model;
+-(id) initWithModel:(Wallet *) model broker:(Broker *)broker;
+
+-(NSString *) currencyAtIndex:(NSInteger)index;
 
 @end

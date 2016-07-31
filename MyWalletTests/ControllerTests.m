@@ -10,6 +10,7 @@
 #import "SimpleViewController.h"
 #import "WalletTableViewController.h"
 #import "Wallet.h"
+#import "Broker.h"
 
 @interface ControllerTests : XCTestCase
 @property (nonatomic,strong) SimpleViewController *simpleVC;
@@ -36,7 +37,8 @@
 //    [self.wallet plus: [Money euroWithAmount:1]];
     
     self.walletVC = [[WalletTableViewController alloc]
-                     initWithModel:self.wallet];
+                     initWithModel:self.wallet
+                     broker:nil];
 
 }
 

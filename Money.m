@@ -63,7 +63,7 @@
                    withBroker:(Broker*) broker{
     Money *result;
     double rate = [[broker.rates objectForKey:[broker
-                                             keyFromCurrency:self.currency
+                                             keyForCurrency:self.currency
                                              toCurrency:currency]] doubleValue];
     
     // Comprobamos que divisa de origen y de destino son las mismas

@@ -18,6 +18,7 @@
 -(id) init{
     if (self = [super init]) {
         _rates = [@{}mutableCopy];
+        _currencies = [[NSMutableSet alloc] init];
     }
     return self;
 }
@@ -38,21 +39,24 @@
     
     [self.rates setObject:@(rate)
                    forKey:[self
-                           keyFromCurrency:fromCurrency
+                           keyForCurrency:fromCurrency
                                      toCurrency:toCurrency]];
     
     NSNumber *invRate = @(1.0/rate);
     [self.rates setObject:invRate
                    forKey:[self
-                           keyFromCurrency:toCurrency
+                           keyForCurrency:toCurrency
                            toCurrency:fromCurrency]];
+    
+    [self.currencies addObject:fromCurrency];
+    [self.currencies addObject:toCurrency];
     
 }
 
 
 #pragma mark - utils
 
--(NSString *) keyFromCurrency:(NSString *) fromCurrency
+-(NSString *) keyForCurrency:(NSString *) fromCurrency
                    toCurrency:(NSString *) toCurrency{
     
     return [NSString stringWithFormat:@"%@-%@", fromCurrency, toCurrency];
@@ -77,6 +81,7 @@
         
     }
 }
+
 
 
 @end
